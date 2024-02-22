@@ -1,0 +1,7 @@
+<odoo>
+    <template id="custom_rainbow" inherit_id="web.assets_common">
+        <xpath expr="." position="inside">
+            <script type="text/javascript" src="/custom_rainbow/static/src/js/custom_rainbow.js"></script>
+        </xpath>
+</template>
+</odoo>

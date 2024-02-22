@@ -1,0 +1,34 @@
+<odoo>
+     <record id="select_image" model="ir.ui.view">
+            <field name="name">select.image</field>
+            <field name="model">rainbow</field>
+            <field name="arch" type="xml">
+                <form string="Choose Image">
+                    <group class="oe_title">
+                        <field name="image_rb" widget="image" />
+                    </group>
+                    <footer>
+                      <button name="action_submit_picture" string="Submit" type="object" class="btn-primary"/>
+                        <button string="Cancel" class="btn-secondary" special="cancel"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+    <record id="action_custom_effect_menu" model="ir.actions.act_window">
+            <field name="name">Choose Image</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">rainbow</field>
+            <field name="view_mode">form</field>
+         <field name="view_id" ref="select_image"/>
+            <field name="target">new</field>
+        </record>
+
+     <menuitem id="image_menu_rainbow"
+               name="Custom Effect"
+               action="action_custom_effect_menu"
+     />
+
+
+
+
+</odoo>
