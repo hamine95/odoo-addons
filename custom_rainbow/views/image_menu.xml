@@ -5,7 +5,7 @@
             <field name="arch" type="xml">
                 <form string="Choose Image">
                     <group class="oe_title">
-                        <field name="image_rb" widget="image" />
+                        <field name="image_rb" filename="file_upload" widget="image" />
                     </group>
                     <footer>
                       <button name="action_submit_picture" string="Submit" type="object" class="btn-primary"/>
